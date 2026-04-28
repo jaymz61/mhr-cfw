@@ -69,7 +69,7 @@ pip install -r requirements.txt
 5. **Important:** Change the password on this line to something only you know, also replace the worker url with your cloudflare worker:
    ```javascript
    const AUTH_KEY = "your-secret-password-here";
-   const WORKER_URL "myworker.workers.dev";
+   const WORKER_URL "https://myworker.workers.dev";
    ```
 6. Click **Deploy** → **New deployment**.
 7. Choose **Web app** as the type.
