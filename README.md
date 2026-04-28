@@ -105,7 +105,7 @@ pip install -r requirements.txt
      "verify_ssl": true
    }
    ```
-   - `script_id` → Paste the Deployment ID from Step 2.
+   - `script_id` → Paste the Deployment ID from Step 3.
    - `auth_key` → The **same password** you set in `Code.gs`.
 
 ### 4 - Run
