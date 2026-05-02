@@ -1,3 +1,5 @@
+// Cloudflare Worker File
+
 const WORKER_URL = "myworker.workers.dev";
 
 export default {
