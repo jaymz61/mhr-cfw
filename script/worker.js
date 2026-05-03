@@ -1,4 +1,4 @@
-// Cloudflare Worker File
+// Cloudflare Worker File - v2.0
 
 const WORKER_URL = "myworker.workers.dev";
 
