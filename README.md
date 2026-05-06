@@ -3,6 +3,10 @@
 [![GitHub](https://img.shields.io/badge/GitHub-MHR_CFW-red?logo=github)](https://github.com/denuitt1/mhr-cfw)
 
 
+## ⚠️ This project has moved to https://github.com/denuitt1/mhr-cfw-go
+
+---
+
 | [English](README.md) | [Persian](README_FA.md) |
 | :---: | :---: |
 
