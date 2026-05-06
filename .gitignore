@@ -1,6 +1,6 @@
 # Secrets & user config
 config.json
-.env
+./.env
 
 # CA certificates (generated at runtime, contain private keys)
 ca/
