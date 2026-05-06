@@ -1,6 +1,6 @@
 # MHR-CFW - MITM Domain-Fronted HTTP Relay + Cloudflare Worker Exit
 
-[![GitHub](https://img.shields.io/badge/GitHub-MHR_CFW-blue?logo=github)](https://github.com/denuitt1/mhr-cfw)
+[![GitHub](https://img.shields.io/badge/GitHub-MHR_CFW-red?logo=github)](https://github.com/denuitt1/mhr-cfw)
 
 
 | [English](README.md) | [Persian](README_FA.md) |
