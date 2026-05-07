@@ -54,7 +54,7 @@ pip install -r requirements.txt
 2. From the sidebar, navigate to **Compute > Workers & Pages**
 3. Click **Create Application**, Choose **Start with Hello World** and click on **Deploy**
 4. Click on **Edit code** and **Delete** all the default code in the editor.
-5. Open the [`worker.js`](script/worker.js) file from this project (under `script/`), **copy everything**, and paste it into the Apps Script editor.
+5. Open the [`worker.js`](deploy/cloudflare-worker/worker.js) file from this project (under `deploy/`), **copy everything**, and paste it into the Apps Script editor.
 6. **Important:** Change the worker on this line to the worker you created:
    ```javascript
    const WORKER_URL = "myworker.workers.dev";
@@ -66,7 +66,7 @@ pip install -r requirements.txt
 1. Open [Google Apps Script](https://script.google.com/) and sign in with your Google account.
 2. Click **New project**.
 3. **Delete** all the default code in the editor.
-4. Open the [`Code.gs`](script/Code.gs) file from this project (under `script/`), **copy everything**, and paste it into the Apps Script editor.
+4. Open the [`Code.gs`](deploy/gas/Code.gs) file from this project (under `deploy/`), **copy everything**, and paste it into the Apps Script editor.
 5. **Important:** Change the password on this line to something only you know, also replace the worker url with your cloudflare worker:
    ```javascript
    const AUTH_KEY = "your-secret-password-here";
@@ -127,7 +127,7 @@ Cloudflare Workers don't expose a stable outbound IP — `fetch()` exits through
 
 ### 1. Deploy the forwarder on a VPS
 
-The reference implementation is [`script/upstream_forwarder.js`](script/upstream_forwarder.js).
+The reference implementation is [`deploy/upstream-forwarder/upstream_forwarder.js`](deploy/upstream-forwarder/upstream_forwarder.js).
 It needs Node 18+ and no dependencies. Run it behind Caddy or nginx with TLS —
 the Worker rejects non-HTTPS forwarder URLs.
 
@@ -136,7 +136,7 @@ the Worker rejects non-HTTPS forwarder URLs.
 sudo apt install -y nodejs   # must be 18+
 export AUTH_KEY="some-long-random-string-at-least-32-chars"
 export PORT=8787
-node script/upstream_forwarder.js
+node deploy/upstream-forwarder/upstream_forwarder.js
 ```
 
 Front it with Caddy for auto-TLS:
